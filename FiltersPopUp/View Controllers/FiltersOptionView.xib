@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FiltersOptionView" customModule="FiltersPopUp" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="oP3-ac-9Fq" id="hmD-FK-xKY"/>
+                <outlet property="filterByLabel" destination="Jo8-22-hv6" id="Wce-Xv-dVv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oP3-ac-9Fq">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jo8-22-hv6">
+                            <rect key="frame" x="16" y="12.5" width="305" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            </variation>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uh-ts-ubv">
+                            <rect key="frame" x="337" y="11" width="22" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="2uh-ts-ubv" secondAttribute="height" multiplier="1:1" id="XOS-j9-mQH"/>
+                            </constraints>
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <state key="normal" image="Filters"/>
+                            <connections>
+                                <action selector="openFiltertapped:" destination="-1" eventType="touchUpInside" id="frV-p3-NfK"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="2uh-ts-ubv" secondAttribute="trailing" constant="16" id="8nb-JF-mKS"/>
+                        <constraint firstItem="Jo8-22-hv6" firstAttribute="centerY" secondItem="oP3-ac-9Fq" secondAttribute="centerY" id="Fse-fq-FUZ"/>
+                        <constraint firstItem="2uh-ts-ubv" firstAttribute="centerY" secondItem="Jo8-22-hv6" secondAttribute="centerY" id="XiV-du-WE5"/>
+                        <constraint firstItem="2uh-ts-ubv" firstAttribute="centerY" secondItem="oP3-ac-9Fq" secondAttribute="centerY" id="Zrm-rR-mZm"/>
+                        <constraint firstItem="2uh-ts-ubv" firstAttribute="leading" secondItem="Jo8-22-hv6" secondAttribute="trailing" constant="16" id="uTs-Sd-dMj"/>
+                        <constraint firstItem="Jo8-22-hv6" firstAttribute="leading" secondItem="oP3-ac-9Fq" secondAttribute="leading" constant="16" id="vmv-Zy-A0w"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="oP3-ac-9Fq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0C2-iB-I1w"/>
+                <constraint firstItem="oP3-ac-9Fq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Iow-oC-vZo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oP3-ac-9Fq" secondAttribute="trailing" id="sO5-0M-dBD"/>
+                <constraint firstAttribute="bottom" secondItem="oP3-ac-9Fq" secondAttribute="bottom" id="yD7-Lg-xh5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="31.199999999999999" y="-389.5052473763119"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Filters" width="22" height="18"/>
+    </resources>
+</document>
